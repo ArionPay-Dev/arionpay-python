@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,14 +7,14 @@ name = "arionpay"
 version = "1.0.0"
 description = "Official Python client for ArionPay: create crypto invoices and verify webhooks. Payments go straight to your own wallet."
 readme = "README.md"
-license = { text = "MIT" }
-authors = [{ name = "ArionPay" }]
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "ArionPay", email = "info@arionpay.com" }]
 requires-python = ">=3.8"
 dependencies = []
 keywords = ["arionpay", "crypto", "payments", "bitcoin", "usdt", "payment-gateway", "webhook"]
 classifiers = [
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Topic :: Office/Business :: Financial",
   "Typing :: Typed",
@@ -24,6 +24,7 @@ classifiers = [
 Homepage = "https://arionpay.com"
 Documentation = "https://arionpay.com/knowledge-base"
 Source = "https://github.com/ArionPay-Dev/arionpay-python"
+Changelog = "https://github.com/ArionPay-Dev/arionpay-python/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
